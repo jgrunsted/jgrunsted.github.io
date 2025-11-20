@@ -177,7 +177,7 @@ class Obj {
                     connect_points.push([this.points[v], bodies[u].points[v]]);
                 }
             }
-            console.log(connect_points);
+            //console.log(connect_points);
             if (this.connect) {
                 cv.beginPath()
                 for (var v = 0; v < connect_points.length; v++) {
