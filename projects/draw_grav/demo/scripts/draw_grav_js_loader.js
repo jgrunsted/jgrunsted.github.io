@@ -198,7 +198,7 @@ function ljson(config_name) {
     var bg_color = 'rgba(0, 0, 0, 0)';
     var con_color = 'rgba(0, 0, 0, 0)';
 
-    $.getJSON(`projects/draw_grav/demo/scripts/${config_file_name}.json`, function(data){
+    $.getJSON(`scripts/${config_file_name}.json`, function(data){
         for (const [key, value] of Object.entries(data)) {
             if (key == 'main'){
                 TRAIL_LENGTH = parseInt(value[0]['trail_length']);
