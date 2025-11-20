@@ -241,7 +241,7 @@ function ljson(config_name) {
         document.getElementById("p_opacity").value = curr_color.slice(5, curr_color.length - 1).split(',')[3].slice(1);
 
         var lines = [];
-        $.get(`/scripts/${config_file_name}_pos_log.txt`, function(data){
+        $.get(`scripts/${config_file_name}_pos_log.txt`, function(data){
             lines = data.split(/\r?\n/);
             var positions = [];
             for (var k = 0; k < lines.length; k++) {
