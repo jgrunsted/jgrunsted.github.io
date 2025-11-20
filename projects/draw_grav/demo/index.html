@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>draw with gravity</title>
+	<script data-main="scripts/canvas" src="scripts/jquery.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<style type="text/css">
+	</style>
+</head>
+<body style="background-color: rgb(6, 12, 24);">
+	<style>
+		html, body {
+   			margin: 0;
+   			padding: 0;
+		}
+
+		.sliders {
+			margin-left: 2%;
+    		float: left;
+    		width: 25%;
+    		border:none;
+			color: white;
+		}
+
+		.canvas {
+			float: left;
+			width: 50%;
+			border:none
+		}
+
+		.hspacer {
+			width:5%;
+			float:left;
+		}
+
+		.clear {
+			clear:both;
+		}
+	</style>
+	<div class="sliders">
+		<div><p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 28px;">Overall Settings</p></div>
+		<div>
+			<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">JSON Configuration File Name</p>
+			<!-- <input type="text" name="config file name" id="config file" onchange="ljson(this.value)"> -->
+			<select style="font-family:Helvetica Neue; font-size: 20px;" name="config file name" id="config file" onchange="ljson(this.value)">
+				<option value="---" selected>--Choose Here--</option>
+				<option value="binary_star_1">Binary Star 1</option>
+				<option value="binary_star_2">Binary Star 2</option>
+				<option value="binary_star_4">Binary Star 3</option>
+				<option value="many_particles_1">Many Particles</option>
+			</select>
+			<p></p>
+		</div>
+		<div>
+			<input type="checkbox" id="Draw Planets" checked onclick="drawPlanets()">
+			<label for="Draw Planets" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Draw Planets</label>
+		</div>
+		<div>
+			<input type="checkbox" id="Draw Trails" checked onclick="drawTrails()">
+			<label for="Draw Trails" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Draw Trails</label>
+		</div>
+		<div>
+			<input type="checkbox" value="Draw Connections" checked onclick="drawConnect()">
+			<label for="Draw Connections" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Draw Connections</label>
+		</div>
+		<div>
+			<input type="checkbox" value="Edit Mode" onclick="editMode()">
+			<label for="Edit Mode" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Turn Edit Mode On/Off</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Background Color RGB</p>
+		<div>
+			<input type="range" name="bg_red" id="bg_red" min="0" max="255" value="0" step="1" oninput="bgr(this.value)">
+			<label for="bg_red" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Red</label>
+		</div>
+		<div>
+			<input type="range" name="bg_green" id="bg_green" min="0" max="255" value="0" step="1" oninput="bgg(this.value)">
+			<label for="bg_green" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Green</label>
+		</div>
+		<div>
+			<input type="range" name="bg_blue" id="bg_blue" min="0" max="255" value="0" step="1" oninput="bgb(this.value)">
+			<label for="bg_blue" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Blue</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Connection Color RGBA</p>
+		<div>
+			<input type="range" name="con_red" id="con_red" min="0" max="255" value="0" step="1" oninput="cor(this.value)">
+			<label for="con_red" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Red</label>
+		</div>
+		<div>
+			<input type="range" name="con_green" id="con_green" min="0" max="255" value="0" step="1" oninput="cog(this.value)">
+			<label for="con_green" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Green</label>
+		</div>
+		<div>
+			<input type="range" name="con_blue" id="con_blue" min="0" max="255" value="0" step="1" oninput="cob(this.value)">
+			<label for="con_blue" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Blue</label>
+		</div>
+		<div>
+			<input type="range" name="con_opacity" id="con_opacity" min="0" max="1" value="1" step=".01" oninput="coo(this.value)">
+			<label for="con_opacity" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Opacity</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Trail Settings</p>
+		<div>
+			<input type="range" name="trail_stroke" id="trail_stroke" min="1" max="40" value="0" step="1" oninput="trail_stroke(this.value)">
+			<label for="trail_stroke" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Stroke</label>
+		</div>
+		<div>
+			<input type="range" name="t_length" id="t_length" min="1" max="2000" value="1" step="10" oninput="t_length(this.value)">
+			<label for="t_length" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Length</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Connection Settings</p>
+		<div>
+			<input type="range" name="con_stroke" id="con_stroke" min="1" max="15" value="0" step="1" oninput="con_stroke(this.value)">
+			<label for="con_stroke" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Stroke</label>
+		</div>
+		<div>
+			<input type="range" name="con_density" id="con_density" min="1" max="100" value="0" step="1" oninput="c_density(this.value)">
+			<label for="con_density" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Density</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Planet Editor</p>
+		<div>
+			<input type="range" name="planet selection" id="planet_select" min="0" max="0" value="0" step="1" oninput="this.nextElementSibling.value = this.value; selected_planet(this.value)">
+			<output style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">0</output>
+			<label for="planet_select" style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Selected Planet</label>
+		</div>
+		<div>
+			<input type="range" name="selected radius" id="selected radius" min="1" max="40" value="0" step="1" oninput="selected_radius(this.value)">
+			<label for="selected radius" style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Radius</label>
+		</div>
+
+		<p style="font-family: Helvetica Neue, Helvetica, sans-serif; font-size: 18px;">Color</p>
+		<div>
+			<input type="range" name="p_red" id="p_red" min="0" max="255" value="0" step="1" oninput="pr(this.value)">
+			<label for="p_red" style="font-family: Helvetica Neue, Helvetica, sans-serif;">R</label>
+		</div>
+		<div>
+			<input type="range" name="p_green" id="p_green" min="0" max="255" value="0" step="1" oninput="pg(this.value)">
+			<label for="p_green" style="font-family: Helvetica Neue, Helvetica, sans-serif;">G</label>
+		</div>
+		<div>
+			<input type="range" name="p_blue" id="p_blue" min="0" max="255" value="0" step="1" oninput="pb(this.value)">
+			<label for="p_blue" style="font-family: Helvetica Neue, Helvetica, sans-serif;">B</label>
+		</div>
+		<div>
+			<input type="range" name="p_opacity" id="p_opacity" min="0" max="1" value="0" step=".01" oninput="po(this.value)">
+			<label for="p_opacity" style="font-family: Helvetica Neue, Helvetica, sans-serif;">Opacity</label>
+		</div>
+	</div>
+	<div class="canvas">
+		<canvas></canvas>
+		<script src="scripts/draw_grav_js_loader.js">
+			async function loadFile(file) {
+        	let text = await file.text();
+        	document.getElementById('output').textContent = text;
+    	 }
+		</script>
+	</div>
+</body>
+</html>

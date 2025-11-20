@@ -1,0 +1,47 @@
+{
+    "main": [
+        {
+            "trail_length": "1000",
+            "connect_density": "10",
+            "fps_max": "150",
+            "bg_color": "208,208,208",
+            "con_color": "43,55,75"
+        }
+    ],
+    "star1": [
+        {
+            "mass": "2000000000000",
+            "radius": "3",
+            "color": "208,49,97",
+            "init_position": "300,500",
+            "init_velocity": "0,130",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "star2": [
+        {
+            "mass": "2000000000000",
+            "radius": "3",
+            "color": "43,55,75",
+            "init_position": "700,500",
+            "init_velocity": "0,-130",
+            "init_acceleration": "0,0",
+            "connect": "True",
+            "fixed_pos": "False"
+        }
+    ],
+    "P2": [
+        {
+            "mass": "1",
+            "radius": "3",
+            "color": "43,55,75",
+            "init_position": "820,500",
+            "init_velocity": "0,230",
+            "init_acceleration": "0,0",
+            "connect": "True",
+            "fixed_pos": "False"
+        }
+    ]
+}

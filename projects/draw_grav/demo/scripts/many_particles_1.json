@@ -1,0 +1,455 @@
+{
+    "main": [
+        {
+            "trail_length": "50",
+            "connect_density": "10000",
+            "fps_max": "100",
+            "bg_color": "255,255,250",
+            "con_color": "255,255,250"
+        }
+    ],
+    "star1": [
+        {
+            "mass": "1500000000000",
+            "radius": "4",
+            "color": "10,10,10",
+            "init_position": "500,500",
+            "init_velocity": "0,130",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "True"
+        }
+    ],
+    "p1": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,50",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p2": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,100",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p3": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,150",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p4": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,200",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p5": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,250",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p6": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,300",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p7": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,350",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p8": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,400",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p9": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,450",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p10": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,550",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p11": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,600",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p12": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,650",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p13": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,700",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p14": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,750",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p15": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,800",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p16": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,850",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p17": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,900",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "p18": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "20,950",
+            "init_velocity": "100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d1": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,50",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d2": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,100",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d3": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,150",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d4": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,200",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d5": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,250",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d6": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,300",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d7": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,350",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d8": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,400",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d9": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,450",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d10": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,550",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d11": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,600",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d12": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,650",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d13": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,700",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d14": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,750",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d15": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,800",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d16": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,850",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d17": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,900",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ],
+    "d18": [
+        {
+            "mass": "1",
+            "radius": "0",
+            "color": "10,10,10",
+            "init_position": "980,950",
+            "init_velocity": "-100,0",
+            "init_acceleration": "0,0",
+            "connect": "False",
+            "fixed_pos": "False"
+        }
+    ]
+}
